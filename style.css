@@ -1,0 +1,44 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/*** Produktliste styling ***/
+
+.produktliste_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 5rem;
+  gap: 20px;
+}
+
+.produktliste_container img {
+  background-color: #d9ccbf;
+  margin-bottom: 1rem;
+}
+
+.produktliste_container p {
+  text-align: center;
+}
+
+.produktliste_container a {
+  text-decoration: none;
+  color: black;
+}
+
+.produktliste_container article {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .produktliste_container {
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+  }
+}
