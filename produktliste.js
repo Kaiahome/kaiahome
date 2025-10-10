@@ -1,6 +1,6 @@
 console.log("Sitet er loadet");
 const produktliste_container = document.querySelector(".produktliste_container");
-const url = `https://dummyjson.com/products?limit=50`; //Url til api'et
+const url = `https://dummyjson.com/products?limit=200`; //Url til api'et
 
 function getData(url) {
   //Henter data fra APIét og sender det videre til funktionen showProducts

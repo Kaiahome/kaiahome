@@ -18,16 +18,15 @@ function show(data) {
     <h2>${data.title}</h2>
     <p>€ ${data.price}</p>
     <p>${data.discountPercentage ? `€ ${(data.price - data.price * (data.discountPercentage / 100)).toFixed(2)}` : ""}</p>
-    <p>${data.discountPercentage}%</p>
+    <p>${data.discountPercentage ? `${data.discountPercentage}%` : ""}</p>
     <div class="product-controls">
         <div class="quantity">
             <button class="minus">−</button>
             <span class="number">1</span>
             <button class="plus">+</button>
         </div>
-    
-        <button class="add-to-basket">Add to basket</button>
-    </div>
+            <button class="add-to-basket">Add to basket</button>
+        </div>
     <h3>About this product</h3>
     <p>${data.description}</p>
     `;
