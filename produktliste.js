@@ -15,7 +15,7 @@ getData(url); //Kalder funktionen getData
 
 function showProducts(products) {
   products.forEach((product) => {
-    //Går igennem alle produkter
+    //Går igennem alle produkter,
     produktliste_container.innerHTML += ` <article> 
        <a href=""><img src="${product.thumbnail}" alt="">
     <p>${product.title}</p>
