@@ -17,7 +17,7 @@ function showProducts(products) {
   products.forEach((product) => {
     //Går igennem alle produkter,
     produktliste_container.innerHTML += ` <article> 
-       <a href=""><img src="${product.thumbnail}" alt="">
+       <a href="produkt.html?id=${product.id}"><img src="${product.thumbnail}" alt="">
     <p>${product.title}</p>
     <p>€ ${product.price}</p></a>
     </article>
