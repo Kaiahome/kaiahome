@@ -37,6 +37,60 @@ img {
   max-width: 20px;
 }
 
+.forside_billede {
+  display: grid;
+}
+
+.forside_billede img,
+.forside_billede h1,
+.forside_billede a {
+  grid-area: 1/1;
+}
+
+.forside_billede h1 {
+  font-size: 3.5rem;
+  justify-self: end;
+  align-self: start;
+  margin-top: 1.7rem;
+  margin-right: 0.7rem;
+}
+
+.forside_billede a {
+  justify-self: end;
+  margin-right: 1rem;
+  margin-top: 5.5rem;
+  color: black;
+  background-color: #d9d9d9;
+  height: 30px;
+  padding-top: 0.3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.new {
+  color: white;
+}
+
+.arrivals {
+  color: white;
+}
+
+.mySlides {
+  height: 85%;
+}
+
+@media screen and (min-width: 1100px) {
+  .forside_billede h1 {
+    font-size: 4.5rem;
+    margin-right: 2rem;
+  }
+
+  .forside_billede a {
+    margin-right: 2rem;
+    margin-top: 6.5rem;
+  }
+}
+
 /************* Menu ********************/
 
 header {
