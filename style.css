@@ -9,6 +9,34 @@ img {
   height: auto;
   display: block;
 }
+
+/************ Forside *****************/
+
+#topbar {
+  background-color: #d9ccbf;
+  padding: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#topbar input {
+  background-color: #d9ccbf;
+  border: none;
+  width: 70px;
+}
+
+.search {
+  display: flex;
+}
+
+.icon {
+  display: flex;
+}
+
+#topbar img {
+  max-width: 20px;
+}
+
 /*** Produktliste styling ***/
 
 .produktliste_container {
