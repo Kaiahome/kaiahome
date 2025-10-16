@@ -10,7 +10,9 @@ img {
   display: block;
 }
 
-/************ Forside *****************/
+/********************** Forside ***************************/
+
+/************ Topbar ******************/
 
 #topbar {
   background-color: #d9ccbf;
@@ -37,6 +39,8 @@ img {
   max-width: 20px;
 }
 
+/********** Forside billede/slide **********/
+
 .forside_billede {
   display: grid;
 }
@@ -53,6 +57,7 @@ img {
   align-self: start;
   margin-top: 1.7rem;
   margin-right: 0.7rem;
+  color: white;
 }
 
 .forside_billede a {
@@ -67,34 +72,8 @@ img {
   padding-right: 0.5rem;
 }
 
-.new {
-  color: white;
-}
-
-.arrivals {
-  color: white;
-}
-
 .mySlides {
-  height: 85%;
-}
-
-.kategorier {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  padding: 2rem;
-}
-
-.kategorier_h3 {
-  text-align: center;
-  font-size: clamp(1.5rem, 3.5vw, 4rem);
-  margin-top: 3rem;
-}
-
-.kategorier a:hover {
-  transform: scale(1.1);
-  filter: brightness(0.8);
+  width: 100%;
 }
 
 @media screen and (min-width: 1100px) {
@@ -109,25 +88,121 @@ img {
   }
 }
 
+/*********** Kategorier ********/
+
+.kategorier {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 2rem;
+  margin-bottom: 5rem;
+}
+
+.kategorier_h3 {
+  text-align: center;
+  font-size: clamp(1.5rem, 4vw, 4rem);
+  margin-top: 3rem;
+}
+
+.kategorier a:hover {
+  transform: scale(1.1);
+  filter: brightness(0.8);
+}
+
 @media screen and (min-width: 800px) {
   .kategorier {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
-    padding: 4rem;
+    padding: 2rem;
   }
 }
 
-/************* Menu ********************/
+/********* Fall trends & gift ideas ********/
+
+.boks {
+  background-color: #d9ccbf;
+  width: 250px;
+  height: 220px;
+  grid-area: 1/1;
+  margin-left: 9rem;
+}
+
+.tekst {
+  display: grid;
+}
+
+.trends_ideas img {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.tekst a {
+  font-size: 2.7rem;
+  color: #725e4a;
+  grid-area: 1/1;
+  z-index: 1;
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 900px) {
+  .trends_ideas {
+    display: flex;
+    max-width: 1200px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .tekst1 {
+    order: 2;
+  }
+
+  .tekst1 .overskrift1 {
+    margin-top: 5rem;
+    font-size: 3.8rem;
+  }
+
+  .tekst1 .boks1 {
+    margin-left: 0;
+  }
+
+  .boks {
+    height: 180px;
+    width: 500px;
+    margin-top: 8rem;
+  }
+
+  .trends_ideas .img1 {
+    margin-right: 0;
+  }
+  .trends_ideas .img2 {
+    margin-left: 0;
+    min-width: 200px;
+  }
+
+  .trends_ideas:last-child {
+    margin-left: auto;
+  }
+
+  .tekst2 .overskrift2 {
+    margin-top: 6.5rem;
+    margin-left: 12rem;
+    font-size: 3.8rem;
+  }
+}
+
+/************************* Menu *************************/
 
 header {
-  position: sticky;
   top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   background-color: #ffffff;
+  z-index: 100;
 }
 
 .logo img {
@@ -229,7 +304,7 @@ nav {
   }
 }
 
-/*** Produktliste styling ***/
+/********************** Produktliste styling *************************/
 
 .produktliste_container {
   display: grid;
