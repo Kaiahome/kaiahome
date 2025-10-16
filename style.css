@@ -237,6 +237,33 @@ img {
   }
 }
 
+/********* Club ***************/
+
+.club {
+  margin: 2rem 2rem;
+}
+
+.club img {
+  width: 20%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.club h2 {
+  text-align: center;
+  font-size: 2.7rem;
+}
+
+.club p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.club a {
+  background-color: #d9ccbf;
+  padding: 0.5rem;
+}
+
 /************************* Menu *************************/
 
 header {
