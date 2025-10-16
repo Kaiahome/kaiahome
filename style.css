@@ -9,7 +9,373 @@ img {
   height: auto;
   display: block;
 }
-/*** Produktliste styling ***/
+
+/********************** Forside ***************************/
+
+/************ Topbar ******************/
+
+#topbar {
+  background-color: #d9ccbf;
+  padding: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#topbar input {
+  background-color: #d9ccbf;
+  border: none;
+  width: 70px;
+}
+
+.search {
+  display: flex;
+}
+
+.icon {
+  display: flex;
+}
+
+#topbar img {
+  max-width: 20px;
+}
+
+/********** Forside billede/slide **********/
+
+.forside_billede {
+  display: grid;
+}
+
+.forside_billede img,
+.forside_billede h1,
+.forside_billede a {
+  grid-area: 1/1;
+}
+
+.forside_billede h1 {
+  font-size: 3.5rem;
+  justify-self: end;
+  align-self: start;
+  margin-top: 1.7rem;
+  margin-right: 0.7rem;
+  color: white;
+}
+
+.forside_billede a {
+  justify-self: end;
+  margin-right: 1rem;
+  margin-top: 5.5rem;
+  color: black;
+  background-color: #d9d9d9;
+  height: 30px;
+  padding-top: 0.3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.mySlides {
+  width: 100%;
+}
+
+@media screen and (min-width: 1100px) {
+  .forside_billede h1 {
+    font-size: 4.5rem;
+    margin-right: 2rem;
+  }
+
+  .forside_billede a {
+    margin-right: 2rem;
+    margin-top: 6.5rem;
+  }
+}
+
+/*********** Kategorier ********/
+
+.kategorier {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 2rem;
+  margin-bottom: 5rem;
+}
+
+.kategorier_h3 {
+  text-align: center;
+  font-size: clamp(1.5rem, 4vw, 4rem);
+  margin-top: 3rem;
+}
+
+.kategorier a:hover {
+  transform: scale(1.1);
+  filter: brightness(0.8);
+}
+
+@media screen and (min-width: 800px) {
+  .kategorier {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    padding: 2rem;
+  }
+}
+
+/********* Fall trends & gift ideas ********/
+
+.boks {
+  background-color: #d9ccbf;
+  width: 250px;
+  height: 220px;
+  grid-area: 1/1;
+  margin-left: 9rem;
+}
+
+.tekst {
+  display: grid;
+}
+
+.trends_ideas img {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.tekst a {
+  font-size: 2.7rem;
+  color: #725e4a;
+  grid-area: 1/1;
+  z-index: 1;
+  margin-left: 2rem;
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 900px) {
+  .trends_ideas {
+    display: flex;
+    max-width: 1200px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .tekst1 {
+    order: 2;
+  }
+
+  .tekst1 .overskrift1 {
+    margin-top: 5rem;
+    font-size: 3.8rem;
+  }
+
+  .tekst1 .boks1 {
+    margin-left: 0;
+  }
+
+  .boks {
+    height: 180px;
+    width: 500px;
+    margin-top: 8rem;
+  }
+
+  .trends_ideas .img1 {
+    margin-right: 0;
+  }
+  .trends_ideas .img2 {
+    margin-left: 0;
+    min-width: 200px;
+  }
+
+  .trends_ideas:last-child {
+    margin-left: auto;
+  }
+
+  .tekst2 .overskrift2 {
+    margin-top: 6.5rem;
+    margin-left: 12rem;
+    font-size: 3.8rem;
+  }
+}
+
+/********** About **************/
+
+.about {
+  margin: 2rem;
+}
+
+.about h2 {
+  text-align: center;
+  color: #725e4a;
+  font-size: 2.7rem;
+  margin-bottom: 1.8rem;
+}
+
+.about p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+.about img {
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 900px) {
+  .about {
+    display: grid;
+    margin-top: 8rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+
+  .about img {
+    grid-area: 1/1;
+    margin-top: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .about_tekst {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+/********* Club ***************/
+
+.club {
+  margin: 2rem 2rem;
+}
+
+.club img {
+  width: 20%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.club h2 {
+  text-align: center;
+  font-size: 2.7rem;
+}
+
+.club p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.club a {
+  background-color: #d9ccbf;
+  padding: 0.5rem;
+}
+
+/************************* Menu *************************/
+
+header {
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  z-index: 100;
+}
+
+.logo img {
+  width: 80%;
+  min-width: 200px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 30px;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+  font-size: 1.4rem;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.burger {
+  width: 60px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+
+.burger .line {
+  width: 100%;
+  height: 5px;
+  background-color: #333333;
+  margin-bottom: 10px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(10px, -10px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #725e4a;
+    position: absolute;
+    top: 120px;
+    right: 0;
+    width: 320px;
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+    color: #ffffff;
+  }
+}
+
+/********************** Produktliste styling *************************/
 
 .produktliste_container {
   display: grid;
