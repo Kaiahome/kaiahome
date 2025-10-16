@@ -193,6 +193,28 @@ img {
   }
 }
 
+/********** About **************/
+
+.about {
+  margin: 2rem;
+}
+
+.about h2 {
+  text-align: center;
+  color: #725e4a;
+  font-size: 2.7rem;
+  margin-bottom: 1.8rem;
+}
+
+.about p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.about img {
+  margin-top: 3rem;
+}
+
 /************************* Menu *************************/
 
 header {
