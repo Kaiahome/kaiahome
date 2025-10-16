@@ -209,10 +209,32 @@ img {
 .about p {
   margin-bottom: 1rem;
   font-size: 1.1rem;
+  line-height: 2;
 }
 
 .about img {
   margin-top: 3rem;
+}
+
+@media screen and (min-width: 900px) {
+  .about {
+    display: grid;
+    margin-top: 8rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+
+  .about img {
+    grid-area: 1/1;
+    margin-top: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .about_tekst {
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
 
 /************************* Menu *************************/
