@@ -13,21 +13,43 @@ getData();
 function show(data) {
   console.log("Shows data er: ", data);
   produkt_container.innerHTML = ` 
-    <img src="${data.images[0]}" alt="">
-    <a href="">${data.brand}</a>   
-    <h2>${data.title}</h2>
-    <p>€ ${data.price}</p>
-    <p>${data.discountPercentage ? `€ ${(data.price - data.price * (data.discountPercentage / 100)).toFixed(2)}` : ""}</p>
-    <p>${data.discountPercentage ? `${data.discountPercentage}%` : ""}</p>
-    <div class="product-controls">
-        <div class="quantity">
-            <button class="minus">−</button>
-            <span class="number">1</span>
-            <button class="plus">+</button>
+  
+    <div class="grid_2-1">
+
+
+
+        <div>
+
+            <img src="${data.images[0]}" class="billede_produktside" alt="">
+
         </div>
-            <button class="add-to-basket">Add to basket</button>
+
+
+        <div>
+            <p class="brand_name">${data.brand}</p>
+            <h2 class="h2_produktside">${data.title}</h2>
+            <div class="grid_1-1">
+                <p class="line-through">€ ${data.price}</p>
+
+                <div>
+                    <p>${data.discountPercentage ? `€ ${(data.price - data.price * (data.discountPercentage / 100)).toFixed(2)}` : ""}
+                    </p>
+                    <p class="rabat">${data.discountPercentage ? `${data.discountPercentage}%` : ""}</p>
+                </div>
+            </div>
+
+            <div class="product-controls">
+                <div class="quantity">
+                    <button class="minus">−</button>
+                    <span class="number">1</span>
+                    <button class="plus">+</button>
+                </div>
+                <button class="add-to-basket">Add to basket</button>
+            </div>
+            <h3 class="h3_produktside">About this product</h3>
+            <p class="produkt_beskrivelse">${data.description}</p>
         </div>
-    <h3>About this product</h3>
-    <p>${data.description}</p>
+
+    </div>
     `;
 }
