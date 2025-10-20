@@ -408,3 +408,80 @@ nav {
     padding: 2rem;
   }
 }
+
+/********************** Produkt styling *************************/
+
+.billede_produktside {
+  background-color: #d9ccbf;
+}
+
+.brand_name {
+  font-size: 1.5rem;
+  margin-top: 1.2rem;
+  margin-left: 1rem;
+}
+
+.rabat {
+  background-color: burlywood; /*** En random color jeg abre lige fandt *****/
+  border-radius: 0px;
+}
+
+.h2_produktside {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.h3_produktside {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.produkt_beskrivelse {
+  margin-left: 1rem;
+  margin-bottom: 3rem;
+}
+
+.product-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 1rem;
+  margin-bottom: 1.8rem;
+  padding: 2rem;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+/***** Add-to-basket knapper *****/
+
+.add-to-basket {
+  border-radius: 0rem;
+  background-color: #d9ccbf;
+  padding: 0.5rem;
+}
+
+.minus {
+  border-radius: 0rem;
+  background-color: #d9ccbf;
+  padding: 0.5rem;
+}
+
+.plus {
+  border-radius: 0rem;
+  background-color: #d9ccbf;
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 900px) {
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
