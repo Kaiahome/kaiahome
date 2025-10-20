@@ -1,25 +1,28 @@
-var slideIndex = 0;
+//////// Kilder /////////
+// https://www.w3schools.com/howto/howto_js_slideshow.asp
+// ChatGPT
+
+var slideIndex = 0; // Til at fortælle hvilket billedet som bliver vist
 var carouselTimeout;
 
 function startCarousel() {
-  var x = document.getElementsByClassName("mySlides");
+  var x = document.getElementsByClassName("mySlides"); // Finder alle elementer med klassen "mySlides"
 
-  // Kør kun hvis mobil
+  // Kør kun hvis skærmen er mindre end 800 px (mobilsite)
   if (window.innerWidth < 800) {
-    // Skjul alle slides
+    // Går igennem alle billederne og skjuler dem
     for (var i = 0; i < x.length; i++) {
       x[i].style.display = "none";
     }
 
-    // Vis næste slide
-    slideIndex++;
-    if (slideIndex > x.length) slideIndex = 1;
-    x[slideIndex - 1].style.display = "block";
+    slideIndex++; // lægger 1 til slideindex, så den skiter til næste slide
+    if (slideIndex > x.length) slideIndex = 1; // Hvis slidesindex er større end antallet af billeder, så den gå tilbage til slideindex 1
+    x[slideIndex - 1].style.display = "block"; // viser billedet
 
-    // Kør igen om 2 sekunder
+    // Venter 2 sekunder før den køre funktionen startCarousel igen
     carouselTimeout = setTimeout(startCarousel, 2000);
   } else {
-    // Stop slideshow og vis ingen slides på desktop
+    // Hvis skærmen er bredere end 800 px skal den ikke vises
     clearTimeout(carouselTimeout);
     for (var i = 0; i < x.length; i++) {
       x[i].style.display = "none";
@@ -27,13 +30,13 @@ function startCarousel() {
   }
 }
 
-// Start når siden loader
+// Kalder funktionen startCarousel() når siden er loadet
 startCarousel();
 
-// Tjek når vinduet ændres
+// Når skærmen størrelse ændre sig, så skal denne funktion køre
 window.addEventListener("resize", function () {
-  // Stop evt. eksisterende timeout
+  // Stopper den igangværende funktion
   clearTimeout(carouselTimeout);
-  slideIndex = 0; // reset index
-  startCarousel(); // start igen hvis mobil
+  slideIndex = 0; // resetter index
+  startCarousel(); // Slideshow skal starte igen hvis skærmen er mindre end 800 px
 });
