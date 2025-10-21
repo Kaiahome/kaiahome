@@ -212,7 +212,7 @@ img {
 
 .about p {
   margin-bottom: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   line-height: 2;
 }
 
@@ -244,28 +244,53 @@ img {
 /********* Club ***************/
 
 .club {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 2rem 2rem;
+  align-items: center;
 }
 
-.club img {
+.logo {
   width: 20%;
   margin: 0 auto;
   margin-bottom: 1rem;
+  grid-column: 1;
 }
 
 .club h2 {
   text-align: center;
-  font-size: 2.7rem;
+  font-size: 2.5rem;
+  white-space: nowrap;
 }
 
 .club p {
   text-align: center;
+  margin-top: 1rem;
   margin-bottom: 1.5rem;
+  max-width: 35rem;
+  margin-left: 3rem;
+  font-size: 1.4rem;
 }
 
 .club a {
   background-color: #d9ccbf;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  justify-self: center;
+  margin-left: 17.5rem;
+  color: black;
+}
+.trepic_img {
+  display: flex;
+  grid-column: 2;
+  justify-content: center;
+}
+
+.trepic_img img {
+  width: 50%;
+  height: 50%;
+  max-width: 700px;
+  border-radius: 8px;
 }
 
 /************************* Menu *************************/
