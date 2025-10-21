@@ -18,7 +18,7 @@ function show(data) {
 
 
 
-        <div>
+        <div class="produkt_billede">
 
             <img src="${data.images[0]}" class="billede_produktside" alt="">
 
@@ -34,7 +34,7 @@ function show(data) {
                 <div>
                     <p>${data.discountPercentage ? `€ ${(data.price - data.price * (data.discountPercentage / 100)).toFixed(2)}` : ""}
                     </p>
-                    <p class="rabat">${data.discountPercentage ? `${data.discountPercentage}%` : ""}</p>
+                    <p class="rabat">-${data.discountPercentage ? `${data.discountPercentage}%` : ""}</p>
                 </div>
             </div>
 
@@ -48,7 +48,16 @@ function show(data) {
             </div>
             <h3 class="h3_produktside">About this product</h3>
             <p class="produkt_beskrivelse">${data.description}</p>
+         
+               
+
+            
+           
         </div>
+
+        <div>
+
+        
 
     </div>
     `;
