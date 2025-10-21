@@ -10,9 +10,15 @@ img {
   display: block;
 }
 
-/********************** Forside ***************************/
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: "Inter", sans-serif;
+}
 
-/************ Topbar ******************/
+/************ Topbar ***********/
 
 #topbar {
   background-color: #d9ccbf;
@@ -41,7 +47,9 @@ img {
   max-width: 20px;
 }
 
-/********** Forside billede/slide **********/
+/********************** Forside ***************************/
+
+/******** Forside billede/slide ********/
 
 .forside_billede {
   display: grid;
@@ -212,7 +220,7 @@ img {
 
 .about p {
   margin-bottom: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   line-height: 2;
 }
 
@@ -244,28 +252,53 @@ img {
 /********* Club ***************/
 
 .club {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 2rem 2rem;
+  align-items: center;
 }
 
-.club img {
+.logo {
   width: 20%;
   margin: 0 auto;
   margin-bottom: 1rem;
+  grid-column: 1;
 }
 
 .club h2 {
   text-align: center;
-  font-size: 2.7rem;
+  font-size: 2.5rem;
+  white-space: nowrap;
 }
 
 .club p {
   text-align: center;
+  margin-top: 1rem;
   margin-bottom: 1.5rem;
+  max-width: 35rem;
+  margin-left: 3rem;
+  font-size: 1.4rem;
 }
 
 .club a {
   background-color: #d9ccbf;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  justify-self: center;
+  margin-left: 17.5rem;
+  color: black;
+}
+.trepic_img {
+  display: flex;
+  grid-column: 2;
+  justify-content: center;
+}
+
+.trepic_img img {
+  width: 50%;
+  height: 50%;
+  max-width: 700px;
+  border-radius: 8px;
 }
 
 /************************* Menu *************************/
@@ -414,41 +447,52 @@ nav {
 }
 
 /********************** Produkt styling *************************/
-
 .billede_produktside {
   background-color: #d9ccbf;
+}
+
+@media (min-width: 800px) {
+  .billede_produktside {
+    background-color: #d9ccbf;
+    width: 70%;
+    margin-top: 2rem;
+    margin-left: 8rem;
+  }
 }
 
 .brand_name {
   font-size: 1.5rem;
   margin-top: 1.2rem;
-  margin-left: 1rem;
+  margin-left: -0.5rem;
 }
 
 .rabat {
-  background-color: burlywood; /*** En random color jeg abre lige fandt *****/
+  background-color: #f5f2ef; /*** En random color jeg abre lige fandt *****/
   border-radius: 0px;
+  margin-right: 1rem;
+  margin-left: 0.5rem;
 }
 
 .h2_produktside {
-  margin-left: 1rem;
+  margin-left: -1rem;
   margin-bottom: 2rem;
 }
 
 .h3_produktside {
-  margin-left: 1rem;
+  margin-left: -0.5rem;
   margin-bottom: 0.5rem;
 }
 
 .produkt_beskrivelse {
-  margin-left: 1rem;
+  margin-left: -0.5rem;
   margin-bottom: 3rem;
+  margin-right: 1rem;
 }
 
 .product-controls {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-left: 1rem;
+  margin-left: 0rem;
   margin-bottom: 1.8rem;
   padding: 2rem;
 }
@@ -457,6 +501,7 @@ nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
+  margin-left: -4rem;
 }
 
 .line-through {
