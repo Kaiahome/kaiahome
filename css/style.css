@@ -33,6 +33,8 @@ img {
 
 .icon {
   display: flex;
+  width: 30px;
+  margin-right: 1.7rem;
 }
 
 #topbar img {
@@ -96,6 +98,8 @@ img {
   gap: 30px;
   padding: 2rem;
   margin-bottom: 5rem;
+  width: 100%;
+  height: 100%;
 }
 
 .kategorier_h3 {
