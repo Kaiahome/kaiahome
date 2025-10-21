@@ -10,9 +10,15 @@ img {
   display: block;
 }
 
-/********************** Forside ***************************/
+h1,
+h2,
+h3,
+p,
+a {
+  font-family: "Inter", sans-serif;
+}
 
-/************ Topbar ******************/
+/************ Topbar ***********/
 
 #topbar {
   background-color: #d9ccbf;
@@ -41,7 +47,9 @@ img {
   max-width: 20px;
 }
 
-/********** Forside billede/slide **********/
+/********************** Forside ***************************/
+
+/******** Forside billede/slide ********/
 
 .forside_billede {
   display: grid;
