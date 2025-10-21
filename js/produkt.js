@@ -51,5 +51,12 @@ function show(data) {
         </div>
 
     </div>
+
+    
+
+
+
+
+
     `;
 }
