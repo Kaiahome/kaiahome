@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nyt Produkt</title>
+    <link rel="stylesheet" href="/css/formular.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div id="topbar">
+        <div class="search">
+            <img src="/images/icon/Search.svg" alt="Search">
+            <input type="text" placeholder="Search ...." />
+        </div>
+        <p>Levering 1-5 dage</p>
+        <div class="icon">
+            <img src="/images/icon/User.svg" alt="User">
+            <img src="/images/icon/Favorite.svg" alt="Favorite">
+            <img src="/images/icon/ShoppingBag.svg" alt="ShoppingBag">
+        </div>
+    </div>
+
+    <header>
+
+        <div class="logo">
+            <a href="/">
+                <img src="/images/icon/Logo.svg" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <div class="menu_container"></div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div></a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>New Product</h1>
+
+        <p>Here you can easily add a new product to the site. Fill in the product name, description, price, and upload
+            an image so
+            others can see it right away</p>
+
+        <form action="#">
+            <label for="Productname">Productname</label><br>
+            <input type="text" id="Productname" name="Productname"></br>
+
+            <label for="Brand">Brand</label><br>
+            <input type="text" id="Brand" name="Brand"></br>
+
+            <label for="ProductDescription">Product Description</label><br>
+            <textarea id="ProductDescription" name="ProductDescription" rows="3"></textarea>
+
+            <label for="Price">Price</label><br>
+            <input type="text" id="Price" name="Price"></br>
+
+            <label for="Discount">Discount</label><br>
+            <input type="text" id="Discount" name="Discount"></br>
+
+            <label for="file">Upload file:</label>
+            <input type="file" id="file" name="file">
+            <br><br>
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </main>
+
+
+
+
+    <script src="/js/menu.js"></script>
+
+</body>
+
+</html>
