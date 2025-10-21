@@ -60,5 +60,12 @@ function show(data) {
         
 
     </div>
+
+    
+
+
+
+
+
     `;
 }

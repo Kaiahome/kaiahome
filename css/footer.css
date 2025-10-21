@@ -1,0 +1,33 @@
+footer {
+  background-color: #d9ccbf;
+  padding: 2rem;
+}
+
+.footer_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 0.2rem;
+}
+
+.knap_1 {
+  text-decoration: underline;
+  border-radius: 0rem;
+  background-color: whitesmoke;
+  padding: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.knap_2 {
+  text-decoration: underline;
+  border-radius: 0rem;
+  background-color: whitesmoke;
+  padding: 0.5rem;
+  text-decoration-color: black;
+}
