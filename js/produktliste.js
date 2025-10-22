@@ -38,9 +38,18 @@ function showProducts(products) {
   products.forEach((product) => {
     //Går igennem alle produkter,
     produktliste_container.innerHTML += ` <article> 
-       <a href="produkt.html?id=${product.id}"><img src="${product.thumbnail}" alt="">
-    <p>${product.title}</p>
-    <p>€ ${product.price}</p></a>
+       <a href="produkt.html?id=${product.id}">
+    <div class = "${product.discountPercentage ? "discount_status_mærke" : ""}">
+       <img src="${product.thumbnail}" alt="">
+       <div class = "mærker">
+       ${product.discountPercentage ? `<p class="discountmærke">${product.discountPercentage}%</p>` : ""}
+       ${product.availabilityStatus === "Low Stock" ? `<p class="statusmærke">Low in stock</p>` : ""}
+       </div>
+       
+    </div>
+      <p>${product.title}</p>
+      <p>€ ${product.price}</p>
+      </a>
     </article>
 `;
   });
