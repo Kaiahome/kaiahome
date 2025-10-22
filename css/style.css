@@ -39,7 +39,7 @@ a {
 
 .icon {
   display: flex;
-  width: 30px;
+  width: 60px;
   margin-right: 1.7rem;
 }
 
@@ -252,10 +252,8 @@ a {
 /********* Club ***************/
 
 .club {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 2rem 2rem;
-  align-items: center;
+  margin-top: 4rem;
+  text-align: center;
 }
 
 .logo {
@@ -273,10 +271,10 @@ a {
 
 .club p {
   text-align: center;
+  margin: 0 auto;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   max-width: 35rem;
-  margin-left: 3rem;
   font-size: 1.4rem;
 }
 
@@ -284,37 +282,46 @@ a {
   background-color: #d9ccbf;
   padding: 0.5rem 1rem;
   display: inline-block;
-  justify-self: center;
-  margin-left: 17.5rem;
   color: black;
+  margin-bottom: 3rem;
 }
+
 .trepic_img {
-  display: flex;
-  grid-column: 2;
-  justify-content: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .trepic_img img {
   width: 50%;
   height: 50%;
-  max-width: 700px;
-  border-radius: 8px;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 900px) {
+  .club {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem 2rem;
+    align-items: center;
+  }
 }
 
 /************************* Menu *************************/
 
 header {
+  position: sticky;
   top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   background-color: #ffffff;
   z-index: 100;
 }
 
 .logo img {
-  width: 80%;
+  width: 70%;
   min-width: 200px;
 }
 
@@ -422,8 +429,26 @@ nav {
 }
 
 .produktliste_container img {
-  background-color: #d9ccbf;
+  background-color: #f5f2ef;
   margin-bottom: 1rem;
+}
+
+.category_overskrift {
+  font-size: 4rem;
+  text-align: center;
+  color: #725e4a;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.category_description {
+  font-size: 1rem;
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 1000px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 0 2rem;
 }
 
 .produktliste_container p {
@@ -448,82 +473,99 @@ nav {
 
 /********************** Produkt styling *************************/
 .billede_produktside {
-  background-color: #d9ccbf;
+  background-color: #f5f2ef;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
 }
 
-@media (min-width: 800px) {
-  .billede_produktside {
-    background-color: #d9ccbf;
-    width: 70%;
-    margin-top: 2rem;
-    margin-left: 8rem;
-  }
+.grid_2-1 {
+  padding: 2rem;
+  margin-top: 3rem;
 }
 
 .brand_name {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   margin-top: 1.2rem;
-  margin-left: -0.5rem;
+  margin-bottom: 1.5rem;
+  text-decoration: underline;
+  font-weight: 300;
 }
 
 .rabat {
-  background-color: #f5f2ef; /*** En random color jeg abre lige fandt *****/
-  border-radius: 0px;
-  margin-right: 1rem;
-  margin-left: 0.5rem;
+  background-color: #f5f2ef;
+  width: 90px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 1rem auto;
+  border: 1px solid #333333;
+  text-align: center;
+}
+
+.product-controls button:hover {
+  background-color: #cebdad;
 }
 
 .h2_produktside {
-  margin-left: -1rem;
+  color: #725e4a;
+  font-size: 2rem;
   margin-bottom: 2rem;
 }
 
 .h3_produktside {
-  margin-left: -0.5rem;
+  color: #725e4a;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
 
 .produkt_beskrivelse {
-  margin-left: -0.5rem;
   margin-bottom: 3rem;
-  margin-right: 1rem;
+  margin-top: 1.3rem;
+  max-width: 480px;
+  margin-right: 2rem;
+  line-height: 1.6;
+}
+
+.tekst_information {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .product-controls {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-left: 0rem;
-  margin-bottom: 1.8rem;
-  padding: 2rem;
+  display: flex;
+  margin-bottom: 3rem;
+  gap: 10%;
+  align-items: center;
 }
 
 .grid_1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
-  margin-left: -4rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 100px;
 }
 
 .line-through {
   text-decoration: line-through;
 }
 
+button {
+  cursor: pointer;
+}
+
 /***** Add-to-basket knapper *****/
 
 .add-to-basket {
-  border-radius: 0rem;
   background-color: #d9ccbf;
-  padding: 0.5rem;
+  font-size: 1.2rem;
+  padding: 1rem 3rem;
 }
 
 .minus {
-  border-radius: 0rem;
   background-color: #d9ccbf;
   padding: 0.5rem;
 }
 
 .plus {
-  border-radius: 0rem;
   background-color: #d9ccbf;
   padding: 0.5rem;
 }
@@ -531,10 +573,11 @@ nav {
 @media screen and (min-width: 900px) {
   .grid_2-1 {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
+    padding: 0;
   }
 }
 
 footer {
-  margin-top: 5rem;
+  margin-top: 4rem;
 }

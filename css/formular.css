@@ -4,6 +4,7 @@ main {
 
 h1 {
   text-align: center;
+  margin-top: 2rem;
   margin-bottom: 1.5rem;
   font-size: 3rem;
 }
@@ -11,8 +12,7 @@ h1 {
 p {
   margin: 0 auto;
   text-align: center;
-  max-width: 600px;
-  margin-bottom: 2rem;
+  max-width: 800px;
 }
 
 input {
@@ -33,4 +33,5 @@ input {
 form {
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 2rem;
 }

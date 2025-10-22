@@ -13,7 +13,7 @@ function visKategorier(kategori) {
             <ul class="menu">
                 <li><a href="index.html">News</a></li>
                 <li><a href="produktliste.html?category=${kategori[2].slug} ">Home</a></li>
-                <li><a href="produktliste.html?category=${kategori[19].slug}">Women</a></li>
+                <li><a href="produktliste.html?category=${kategori[20].slug}">Women</a></li>
                 <li><a href="produktliste.html?category=${kategori[7].slug}">Men</a></li>
                 <li><a href="produktliste.html?category=${kategori[0].slug}">Beauty</a></li>
                 <li><a href="produktliste.html?category=${kategori[19].slug}">Accessories</a></li>
