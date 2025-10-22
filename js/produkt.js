@@ -25,11 +25,11 @@ function show(data) {
         </div>
 
 
-        <div>
+        <div class="tekst_information">
             <p class="brand_name">${data.brand}</p>
             <h2 class="h2_produktside">${data.title}</h2>
             <div class="grid_1-1">
-                <p class="line-through">€ ${data.price}</p>
+                <p class="line-through">Before: € ${data.price}</p>
 
                 <div>
                     <p>${data.discountPercentage ? `€ ${(data.price - data.price * (data.discountPercentage / 100)).toFixed(2)}` : ""}
@@ -48,11 +48,7 @@ function show(data) {
             </div>
             <h3 class="h3_produktside">About this product</h3>
             <p class="produkt_beskrivelse">${data.description}</p>
-         
-               
-
-            
-           
+      
         </div>
 
         <div>
