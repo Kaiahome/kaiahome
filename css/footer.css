@@ -3,17 +3,41 @@ footer {
   padding: 2rem;
 }
 
-.footer_1-1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+@media screen and (min-width: 800px) {
+  .footer_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 h2 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
-p {
-  margin-bottom: 0.2rem;
+li {
+  margin-bottom: 0.3rem;
+}
+
+.footer_logo {
+  width: 60%;
+  margin-bottom: 4rem;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.costomerservice {
+  margin-bottom: 2rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 .knap_1 {
